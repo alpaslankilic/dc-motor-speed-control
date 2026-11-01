@@ -15,7 +15,7 @@ p.voltageLimit = 24;       % Symmetric ideal drive saturation [V]
 p.reference = 120;         % Speed request [rad/s]
 p.referenceTime = 0.1;     % Speed step time [s]
 p.loadTorque = 0.12;       % Opposing load step [N m]
-p.loadTime = 2;            % Load step time [s]
-p.stopTime = 3.362;        % Default horizon [s]; includes post-load settling
+p.loadTime = 2.508;        % Load step time [s]
+p.stopTime = 3.734;        % Default horizon [s]; includes post-load settling
 p.sampleTime = 0.002;      % Saved comparison grid [s]
 end

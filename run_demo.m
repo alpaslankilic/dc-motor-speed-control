@@ -9,7 +9,7 @@ oldFolder = pwd;
 folderCleanup = onCleanup(@() cd(oldFolder));
 cd(root);
 p = motor_parameters();
-windows = plan_figure_windows(p);
+[windows,p] = plan_figure_windows(p);
 p.stopTime = windows.stopTime;
 
 % Both controllers receive the same reference step AND load disturbance.

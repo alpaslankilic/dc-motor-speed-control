@@ -22,15 +22,15 @@ Edit `motor_parameters.m` to change the experiment. Inspect the editable
 ![Reference tracking](results/01_reference_tracking.png)
 
 **Figure 1. Complete speed response.** Both controllers receive the 120 rad/s
-reference step at 0.1 s and the same 0.12 N m load at **2.0 s** (purple marker).
+reference step at 0.1 s and the same 0.12 N m load at **2.508 s** (purple marker).
 Anti-windup reduces startup overshoot from 46.16% to 8.11%. The plot continues
-until both post-disturbance responses have settled, with 20% time headroom.
+until both post-disturbance responses have settled, with 10% time headroom.
 The pale region indicates the reference's 2% tracking tolerance.
 
 ![Voltage and current throughout startup and load rejection](results/02_control_effort.png)
 
 **Figure 2. Complete control effort.** Voltage and current are shown for both
-controllers through startup, the marked **2.0 s load step**, and final settling.
+controllers through startup, the marked **2.508 s load step**, and final settling.
 Without anti-windup, prolonged saturation leads to a larger speed overshoot and
 negative braking current. Axes follow the actual signal ranges; the unused
 -24 V voltage limit is omitted.
@@ -38,10 +38,10 @@ negative braking current. Axes follow the actual signal ranges; the unused
 ![Load disturbance and speed response](results/03_load_rejection.png)
 
 **Figure 3. Load rejection.** An opposing **0.12 N m shaft torque** is applied at
-**2.0 s**, as marked on both panels. The speed initially falls and then recovers.
+**2.508 s**, as marked on both panels. The speed initially falls and then recovers.
 The peak load-induced deviation is 2.16 rad/s relative to the matched no-load
 run. Speed returns within 2% of its post-load excursion from the reference
-(0.0436 rad/s) after 1.112 s. The absolute speed remains inside the separate
+(0.0433 rad/s) after 1.114 s. The absolute speed remains inside the separate
 2% reference-tracking tolerance throughout this disturbance.
 
 ![Controller voltage and current after the load step](results/04_load_control_effort.png)
@@ -53,11 +53,14 @@ the load. Each axis follows the local signal range; no dual axes are used.
 
 Figures are also available as vector PDFs in `results/`. `plot_results.m`
 recreates them from the simulation tables. The two overview figures show
-**0-3.362 s**, including the disturbance. The detail figures show **1.900-3.362 s**
+**0-3.734 s**, including the disturbance. The detail figures show **2.408-3.734 s**
 with the same marked onset. The endpoint includes startup and post-load settling
 of speed, current, and voltage for both controllers. The limiting post-load
-settling duration is 1.134 s; 20% headroom gives 2.0 + 1.2 x 1.134 = 3.3608 s,
-rounded up to the next 2 ms sample: **3.362 s**.
+settling duration is 1.114 s; 10% headroom gives 2.508 + 1.1 x 1.114 = 3.7334 s,
+rounded up to the next 2 ms sample: **3.734 s**. The first load-free experiment
+shows that the slowest startup speed/current/voltage response settles at
+2.506 s, so the load is applied one saved sample later. These measured phase
+boundaries are recorded in `results/figure_windows.json`.
 
 Startup speed settling uses 2% of the reference. For disturbance recovery, speed
 uses 2% of its post-load excursion, while current and voltage use 2% of their
