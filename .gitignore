@@ -1,0 +1,10 @@
+slprj/
+*.slxc
+*.slx.autosave
+*.slx.r*
+*.asv
+*.m~
+*.mex*
+*.log
+.DS_Store
+Thumbs.db

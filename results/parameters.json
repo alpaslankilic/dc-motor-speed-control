@@ -1,0 +1,20 @@
+{
+  "R": 1.2,
+  "L": 0.02,
+  "J": 0.004,
+  "b": 0.002,
+  "Kt": 0.08,
+  "Ke": 0.08,
+  "Kp": 0.4,
+  "Ki": 4,
+  "Kd": 0.002,
+  "N": 150,
+  "Kaw": 20,
+  "voltageLimit": 24,
+  "reference": 120,
+  "referenceTime": 0.1,
+  "loadTorque": 0.12,
+  "loadTime": 2,
+  "stopTime": 5,
+  "sampleTime": 0.002
+}
