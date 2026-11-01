@@ -15,6 +15,6 @@
   "referenceTime": 0.1,
   "loadTorque": 0.12,
   "loadTime": 2,
-  "stopTime": 5,
+  "stopTime": 3.362,
   "sampleTime": 0.002
 }

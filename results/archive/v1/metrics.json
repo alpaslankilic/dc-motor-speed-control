@@ -1,0 +1,19 @@
+{
+  "matlab_release": "2025b",
+  "ode45_max_speed_error_rad_s": 0.0011362005100892247,
+  "peak_speed_rad_s": 129.72600949201265,
+  "overshoot_percent": 8.1050079100105421,
+  "no_antiwindup_overshoot_percent": 46.15910224553852,
+  "final_speed_error_rad_s": 1.6828549874503551E-5,
+  "final_current_A": 4.5000046094554511,
+  "theoretical_steady_current_A": 4.5,
+  "final_voltage_V": 15.000005014522662,
+  "theoretical_steady_voltage_V": 15,
+  "max_abs_voltage_V": 24,
+  "peak_abs_current_A": 18.721468523973588,
+  "settling_band_percent": 2,
+  "load_peak_speed_error_rad_s": 2.1803001647118947,
+  "first_settling_time_s": 0.796,
+  "load_recovery_time_s": 0,
+  "verification": "PASS"
+}

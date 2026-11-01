@@ -1,0 +1,22 @@
+{
+  "stopTime": 3.362,
+  "trackingEnd": 3.362,
+  "controlEnd": 3.362,
+  "loadStart": 1.9,
+  "loadEnd": 3.362,
+  "headroom_percent": 20,
+  "tracking_band_percent": 2,
+  "post_load_speed_band_percent_of_excursion": 2,
+  "post_load_current_voltage_band_percent_of_step": 2,
+  "limiting_post_load_settling_time_s": 1.134,
+  "post_load_settling_with_antiwindup_s": {
+    "speed": 1.112,
+    "current": 0.89800000000000013,
+    "voltage": 0.8879999999999999
+  },
+  "post_load_settling_without_antiwindup_s": {
+    "speed": 1.134,
+    "current": 0.92600000000000016,
+    "voltage": 0.91800000000000015
+  }
+}
