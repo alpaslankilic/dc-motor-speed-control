@@ -84,15 +84,5 @@ Reproducible data and metrics are in `tracking.csv`, `load_response.csv`,
 `parameters.json`, `figure_windows.json`, and `metrics.json` under `results/`.
 The superseded five-second results are retained in `results/archive/v1/`.
 
-## Relation to the book
-
-Inspired by **P03** in Muhammad Mudassir Shakeel's
-[*The MATLAB, Simulink & Simscape Project-Based Masterbook*](https://buymeacoffee.com/engrprogrammer).
-This is **an independent topic-based implementation, not a reproduction**:
-the book uses a 1 kHz discrete PI controller, encoder feedback, +/-12 V,
-and speed reversal. This repository uses continuous filtered PID, ideal speed
-feedback, +/-24 V, and a combined tracking/load sequence with different motor
-parameters. No book code, figures, or paid project files are included.
-
 Prepared with AI assistance and verified by simulation. Original repository
 code is available under the [MIT License](LICENSE).
